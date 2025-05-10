@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div>
-      <main className="h-screen max-h-screen max-w-screen mx-auto md:container md:p-20 md:pt-4">
+      <main className="flex">
         {user.current ? (
           <>
             <Chat />
@@ -19,6 +19,7 @@ export default function Home() {
         ) : (
           <SignUp />
         )}
+        <SignUp />
       </main>
     </div>
   );

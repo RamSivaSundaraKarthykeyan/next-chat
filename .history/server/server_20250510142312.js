@@ -15,7 +15,7 @@ io.on("connection", (socket) => {
 
   socket.on("btn_clicked", () => {
     console.log("super");
-    io.emit("mass");
+    socket.emit("mass");
   });
 });
 

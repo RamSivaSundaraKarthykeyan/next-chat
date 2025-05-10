@@ -11,12 +11,7 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-  //console.log(`User is connected with id: ${socket.id}`);
-
-  socket.on("btn_clicked", () => {
-    console.log("super");
-    io.emit("mass");
-  });
+  console.log(`User is connected with id: ${socket.id}`);
 });
 
 server.listen(3001, () => {

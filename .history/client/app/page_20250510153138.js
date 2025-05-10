@@ -10,15 +10,10 @@ export default function Home() {
 
   return (
     <div>
-      <main className="h-screen max-h-screen max-w-screen mx-auto md:container md:p-20 md:pt-4">
-        {user.current ? (
-          <>
-            <Chat />
-            <Inputs />
-          </>
-        ) : (
-          <SignUp />
-        )}
+      <main className="flex">
+        <Chat />
+        <Inputs />
+        <SignUp />
       </main>
     </div>
   );

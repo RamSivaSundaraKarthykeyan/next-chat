@@ -1,0 +1,17 @@
+import { useEffect, useRef } from "react";
+
+const Chat = ({ chat, user, typing }) => {
+  return (
+    <div className="h-full pb-12 md:p-4">
+      <div className="w-full h-full max-h-screen rounded-md overflow-y-auto gradient pt-2 md:pt-6">
+        <Message content="Hello world" />
+      </div>
+    </div>
+  );
+};
+
+const Message = ({ content }) => {
+  return <p className={`px-6 py-1 flex md:px-6`}></p>;
+};
+
+export default Chat;

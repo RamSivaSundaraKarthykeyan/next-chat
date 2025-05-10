@@ -6,11 +6,11 @@ import { Chat, Inputs, SignUp } from "@/components";
 const socket = io("http://localhost:3001");
 
 export default function Home() {
-  const user = useRef(null);
+  const user = useRef("null");
 
   return (
     <div>
-      <main className="h-screen max-h-screen max-w-screen mx-auto md:container md:p-20 md:pt-4">
+      <main className="flex">
         {user.current ? (
           <>
             <Chat />
